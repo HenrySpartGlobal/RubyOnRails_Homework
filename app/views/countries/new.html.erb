@@ -1,0 +1,32 @@
+
+<h1> Add Country</h1>
+
+<form action="/countries" method="POST"> 
+
+	<%= token_tag %> 
+
+	<label for="name"> Name </label>
+	
+	<input type="text" name="name" placeholder="Country Name">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<label for="population"> Population </label>
+	
+	<textarea name="population" placeholder="population"> </textarea>
+
+	<label for="language"> Language </label>
+	
+	<textarea name="language" placeholder="language"> </textarea>
+
+	<label for="president"> President </label>
+	
+	<textarea name="president" placeholder="president"> </textarea>
+
+	<label for="flag_url"> Flag </label>
+	
+	<textarea name="flag_url" placeholder="flag"> </textarea>
+
+ <input type="Submit" value="Save">
+
+</form>
+
