@@ -8,7 +8,15 @@
 	<a href="/countries/ <%= country.id %>"> Show Country </a>
 	<a href="/countries/<%= country.id %>/edit"> Edit a Country </a>
 	<a href="/countries/new"> Add a Country </a>
-	<a href="/countries/<%= country.id %>"> Delete Country </a> 
+	
+
+	<form action="/countries/<%= country.id %>" methods="POST">
+		<% token_tag %>
+
+		<input type="submit" value="DELETE">
+		<input type="hidden" name="_method" value="DELETE">
+		
+	</form>
 
 	
 	<% end %> 
